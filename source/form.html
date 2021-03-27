@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="html" lang="ru">
+  <head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="img/favicon/favicon-152.svg" type="image/svg+xml">
+  </head>
+  <body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+    <img src="img/logo/logotype-mobile.svg" alt="Логотип города Седона" width="102" height="84">
+    </a>
+    <nav class="main-nav">
+    <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
+      <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
+    </ul>
+    </nav>
+     <div class="page-header__picture intro">
+    <div class="intro__text">
+    <img src="img/logo/sedona-intro.svg" alt="Седона" width="229" height="39">
+    </div>
+    </div>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Форма отзыва</h1>
+      <section class="review">
+      <h2 class="review__titel">Оставьте свой отзыв</h2>
+      <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="review__form" action="#" method="post">
+        <fieldset class="review__form-fieldset introduce">
+         <legend class="review__form-legend">Представьтесь:</legend>
+          <ul class="introduce__list">
+            <li>
+              <label class="introduce__label" for="name">Имя*</label>
+              <input class="introduce__input" type="text" id="name" name="name" placeholder="Петр"></li>
+            <li>
+              <label class="introduce__label" for="surname"></label>
+              <input class="introduce__input" type="text" id="surname" placeholder="Иванов">
+            </li>
+            <li><label class="introduce__label" for="middle-name"></label>
+                <input class="introduce__input" type="email" id="middle-name" placeholder="Александрович">
+            </li>
+        </ul>
+        </fieldset>
+        <fieldset class="review__form-fieldset contacts">
+          <legend class="review__form-legend">Контактная информация:</legend>
+          <ul class="contacts__list">
+            <li>
+            <label class="contacts__label" for="phone">Контактный телефон*:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите телефон"></li>
+            <li>
+            <label class="contacts__label" for="email">Электронная почта*:</label>
+            <input class="contacts__input" type="email" id="email" name="email" placeholder="Введите e-mail"></li>
+          </ul>
+        </fieldset>
+        <fieldset class="review__form-fieldset impression">
+          <legend class="review__form-legend">Ваше общее впечатление:</legend>
+          <ul class="impression-list">
+            <li>
+              <input type="radio" id="positive" name="radio-input" checked>
+              <label for="positive">Скорее положительное</label>
+            </li>
+               <li>
+              <input type="radio" id="negative" name="radio-input">
+              <label for="negative">Скорее отрицательное</label>
+            </li>
+               <li>
+              <input type="radio" id="neutral" name="radio-input">
+              <label for="neutral">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="review__form-fieldset attractions">
+          <legend class="review__form-legend">Посещенные  достопримечательности:</legend>
+          <ul class="attractions__list">
+            <li>
+            <input class="attractions__input" type="checkbox" id="bridge" name="bridge" checked>
+            <label class="attractions__label" for="bridge">Мост Дьявола</label>
+          </li>
+           <li>
+            <input class="attractions__input" type="checkbox" id="mount" name="mount" checked>
+            <label class="attractions__label" for="mount">Гора-Колокол</label>
+          </li>
+           <li>
+            <input class="attractions__input" type="checkbox" id="park" name="park" checked>
+            <label class="attractions__label" for="park">Слайд-парк</label>
+          </li>
+           <li>
+            <input class="attractions__input" type="checkbox" id="rocks" name="rocks">
+            <label class="attractions__label" for="rocks">Красные скалы</label>
+          </li>
+          </ul>
+        </fieldset>
+        <div class="review__form-message message">
+          <label class="message__label" for="message">Опишшите свои эмоции</label>
+          <textarea class="message__text" name="message" id="message" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+        <button class="review__form-button" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+    <a class="footer__link" href="#">#Visitsedona</a>
+    <ul class="footer__social social-list">
+      <li><a class="social-list__link" href="#" aria-label="Twitter">Twitter</a></li>
+      <li><a class="social-list__link" href="#" aria-label="Facebook">Facebook</a></li>
+      <li><a class="social-list__link" href="#" aria-label="YouTube">Youtube</a></li>
+    </ul>
+    <div class="footer__copyright copyright">
+      <p class="copyright__text">Разработано</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Htmlacademy"><svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+      </svg></a>
+    </div>
+    </div>
+  </footer>
+  </body>
+</html>
