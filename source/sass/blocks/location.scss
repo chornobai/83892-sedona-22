@@ -1,0 +1,9 @@
+.location__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.location__button {
+  @include blue-button;
+}
