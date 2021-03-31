@@ -3,16 +3,3 @@ $white: #ffffff;
 $blue: #81b3d2;
 $grey: #eeeeee;
 $light-grey: #f2f2f2;
-
-@mixin blue-button {
-  font-family: inherit;
-  text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $white;
-  padding: 14px 32px;
-  background: $blue;
-  outline: none;
-  border: none;
-}

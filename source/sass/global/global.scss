@@ -11,6 +11,10 @@
   overflow: hidden;
 }
 
+.html {
+  height: 100%;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -21,11 +25,15 @@ img {
   margin: 0 auto;
 }
 
-.top-container {
-  max-width: 320px;
-  padding: 32px 26px 11px 26px;
-}
-
-.location-container {
-  padding: 29px;
+.button--blue {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $white;
+  padding: 14px 32px;
+  background: $blue;
+  outline: none;
+  border: none;
 }
