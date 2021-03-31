@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../../fonts/ptsans.woff2") format("woff2"), url("../../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../../fonts/ptsansbold.woff2") format("woff2"), url("../../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.container {
+  width: 320px;
+  margin: 0 auto; }
+
+.top-container {
+  max-width: 320px;
+  padding: 32px 26px 11px 26px; }
+
+.location-container {
+  padding: 29px; }
+
+.page-body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  background: #ffffff;
+  min-height: 100%;
+  display: grid; }
+
+.main-nav__list {
+  list-style: none;
+  display: none; }
+
+.main-nav__item {
+  background: #81b3d2; }
+
+.main-nav__link {
+  color: #ffffff;
+  text-decoration: none; }
+
+.intro {
+  width: 100%;
+  min-height: 389px;
+  background: url("../../img/background/back-1.jpg") no-repeat; }
+
+.advantages__title {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700px;
+  margin: 0;
+  margin-bottom: 25px; }
+
+.advantages__text {
+  margin: 0; }
+
+.benefits {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.benefits__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0; }
+
+.benefits__text {
+  margin: 0; }
+
+.benefits--row .benefits__item {
+  color: #ffffff;
+  padding: 34px 13px;
+  background: #81b3d2; }
+
+.benefits-special {
+  background: #eeeeee;
+  padding: 26px 26px; }
+
+.feature {
+  list-style: none;
+  margin: 0;
+  padding: 35px 21px 35px 70px;
+  text-align: left; }
+
+.location__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700; }
+
+.location__button {
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 14px 32px;
+  background: #81b3d2;
+  outline: none;
+  border: none; }
+
+.footer {
+  padding-top: 33px;
+  padding-bottom: 22px; }
+
+.footer__link {
+  display: block;
+  color: #000000;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 35px; }
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px; }
+
+.social-list__link {
+  display: block;
+  width: 46px;
+  height: 48px; }
+
+.social-list--twitter {
+  background: url("../../img/icons/twitter.svg"); }
+
+.social-list--facebook {
+  background: url("../../img/icons/facebook.svg"); }
+
+.social-list--youtube {
+  background: url("../../img/icons/youtube.svg"); }
+
+.copyright {
+  display: flex;
+  justify-content: center; }
+
+/*# sourceMappingURL=style.css.map */
