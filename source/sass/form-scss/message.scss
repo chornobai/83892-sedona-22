@@ -1,0 +1,25 @@
+.message__label {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.message__text {
+  padding: 13px 23px 29px 21px;
+  background: $light-grey;
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+
+  &::placeholder {
+    color: $black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: none;
+  }
+}

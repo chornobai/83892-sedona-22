@@ -1,5 +1,15 @@
 .intro {
   width: 100%;
   min-height: 389px;
-  background: url("../img/background/back-1.jpg") no-repeat;
+  background: $blue url("../img/background/back-1.jpg") no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--small {
+    width: 100%;
+    min-height: 158px;
+    background: $blue url("../img/background/back-1.jpg") bottom;
+    background-size: cover;
+  }
 }

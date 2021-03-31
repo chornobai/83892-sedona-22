@@ -9,7 +9,8 @@
   <link rel="icon" href="img/favicon/favicon-152.svg" type="image/svg+xml">
 </head>
 
-<body class="page-body container">
+<body class="page-body">
+  <div class="container">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <img class="page-header__image" src="img/logo/logotype-mobile.svg" alt="Логотип города Седона" width="102"
@@ -27,7 +28,7 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Форма отзыва</h1>
-    <section class="intro">
+    <section class="intro intro--small">
       <h2 class="visually-hidden">Добро пожаловать в Cедону!</h2>
       <div class="intro__box">
         <img class="intro__slogan" src="img/logo/sedona-intro.svg" alt="Sedona" width="229" height="39">
@@ -41,14 +42,14 @@
           <legend class="review__form-legend">Представьтесь:</legend>
           <ul class="introduce__list">
             <li>
-              <label class="introduce__label" for="name">Имя*</label>
+              <label class="introduce__label" for="name">Имя*:</label>
               <input class="introduce__input" type="text" id="name" name="name" placeholder="Петр">
             </li>
             <li>
-              <label class="introduce__label" for="surname"></label>
+              <label class="introduce__label" for="surname">Фамилия*:</label>
               <input class="introduce__input" type="text" id="surname" placeholder="Иванов">
             </li>
-            <li><label class="introduce__label" for="middle-name"></label>
+            <li><label class="introduce__label" for="middle-name">Отчество:</label>
               <input class="introduce__input" type="email" id="middle-name" placeholder="Александрович">
             </li>
           </ul>
@@ -58,7 +59,7 @@
           <ul class="contacts__list">
             <li>
               <label class="contacts__label" for="phone">Контактный телефон*:</label>
-              <input type="tel" id="phone" name="phone" placeholder="Введите телефон">
+              <input class="contacts__input" type="tel" id="phone" name="phone" placeholder="Введите телефон">
             </li>
             <li>
               <label class="contacts__label" for="email">Электронная почта*:</label>
@@ -70,16 +71,16 @@
           <legend class="review__form-legend">Ваше общее впечатление:</legend>
           <ul class="impression-list">
             <li>
-              <input type="radio" id="positive" name="radio-input" checked>
-              <label for="positive">Скорее положительное</label>
+              <input class="impression__input" type="radio" id="positive" name="radio-input" checked>
+              <label class="impression__label" for="positive">Скорее положительное</label>
             </li>
             <li>
-              <input type="radio" id="negative" name="radio-input">
-              <label for="negative">Скорее отрицательное</label>
+              <input class="impression__input" type="radio" id="negative" name="radio-input">
+              <label class="impression__label" for="negative">Скорее отрицательное</label>
             </li>
             <li>
-              <input type="radio" id="neutral" name="radio-input">
-              <label for="neutral">Затрудняюсь ответить</label>
+              <input class="impression__input" type="radio" id="neutral" name="radio-input">
+              <label class="impression__label" for="neutral">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
@@ -109,7 +110,7 @@
           <textarea class="message__text" name="message" id="message" cols="30" rows="10"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <button class="review__form-button" type="submit">Отправить отзыв</button>
+        <button class="review__form-button button--blue" type="submit">Отправить отзыв</button>
       </form>
     </section>
   </main>
@@ -131,6 +132,7 @@
         </svg></a>
     </div>
 </footer>
+</div>
 </body>
 
 </html>

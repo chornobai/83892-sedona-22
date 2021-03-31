@@ -1,0 +1,25 @@
+.photo__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.photo__title {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  order: 2;
+
+  margin: 0;
+  padding: 0;
+}
+
+.photo__author {
+  order: 3;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.photo__like {
+  order: 4;
+}

@@ -1,0 +1,17 @@
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.like__button {
+  border: none;
+  background: transparent url("../img/icons/like-icon.svg.svg") no-repeat;
+  width: 23px;
+  height: 21px;
+  margin-right: 14px;
+}
+
+.like__count {
+  line-height: 24px;
+  font-weight: 700;
+}
