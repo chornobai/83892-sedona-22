@@ -1,0 +1,11 @@
+.gallery {
+  padding: 0 20px;
+}
+
+.gallery__text {
+  line-height: 24px;
+}
+
+.gallery__list {
+  @include reset;
+}

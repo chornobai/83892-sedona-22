@@ -1,0 +1,29 @@
+.benefits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &--row {
+    .benefits__item {
+      color: $white;
+      padding: 34px 13px;
+      background: $blue;
+    }
+  }
+
+  &--special {
+    background: $grey;
+    padding: 26px 26px;
+  }
+}
+
+.benefits__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.benefits__text {
+  margin: 0;
+}

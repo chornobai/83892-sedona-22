@@ -1,0 +1,13 @@
+.main-nav__list {
+  @include reset;
+  display: none;
+}
+
+.main-nav__item {
+  background: $blue;
+}
+
+.main-nav__link {
+  color: $white;
+  text-decoration: none;
+}

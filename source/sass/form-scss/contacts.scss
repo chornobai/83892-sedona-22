@@ -1,0 +1,20 @@
+.contacts__list {
+  @include reset;
+}
+
+.contacts__input {
+  padding: 18px 0 22px 14px;
+  background: $light-grey;
+  border: none;
+  outline: none;
+  width: 100%;
+
+  &::placeholder {
+    color: $black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: none;
+  }
+}

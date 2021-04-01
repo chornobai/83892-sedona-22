@@ -1,1 +1,30 @@
-// Начните писать стили здесь
+//Global
+
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/mixin.scss";
+
+// Blocks
+@import "blocks/page-body.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/advantages.scss";
+@import "blocks/benefits.scss";
+@import "blocks/feature.scss";
+@import "blocks/location.scss";
+@import "blocks/footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/copyright.scss";
+@import "form-scss/review.scss";
+@import "form-scss/introduce.scss";
+@import "form-scss/contacts.scss";
+@import "form-scss/impression.scss";
+@import "form-scss/attractions.scss";
+@import "form-scss/message.scss";
+@import "catalog-scss/gallery.scss";
+@import "catalog-scss/photo.scss";
+@import "catalog-scss/like.scss";
+@import "catalog-scss/video.scss";
+@import "catalog-scss/controls.scss";
+@import "catalog-scss/button.scss";

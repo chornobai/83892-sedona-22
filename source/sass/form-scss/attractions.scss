@@ -1,0 +1,15 @@
+.attractions__list {
+  @include reset;
+
+  li {
+    text-align: left;
+  }
+}
+
+.attractions__label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+}

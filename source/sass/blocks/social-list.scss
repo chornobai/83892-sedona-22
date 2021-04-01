@@ -1,0 +1,26 @@
+.social-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+
+  &--twitter {
+    background: url("../img/icons/twitter.svg");
+  }
+
+  &--facebook {
+    background: url("../img/icons/facebook.svg");
+  }
+
+  &--youtube {
+    background: url("../img/icons/youtube.svg");
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+}

@@ -1,0 +1,30 @@
+.location {
+  padding-top: 33px;
+}
+
+.location__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.location__text {
+  padding: 0 26px;
+}
+
+.location__button {
+  &--blue {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $white;
+    padding: 14px 32px;
+    background: $blue;
+    outline: none;
+    border: none;
+  }
+}
