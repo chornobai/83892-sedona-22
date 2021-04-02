@@ -1,13 +1,30 @@
+
 .main-nav__list {
   @include reset;
-  display: none;
+  position: relative;
 }
 
 .main-nav__item {
   background: $blue;
+  box-shadow: $shadow-menu;
 }
 
 .main-nav__link {
+  display: block;
   color: $white;
+  padding: 8px 0;
+  font-size: 18px;
+  line-height: 40px;
   text-decoration: none;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  outline: none;
+  border: none;
+  width: 23px;
+  height: 23px;
+  background: transparent url("../../img/icons/icon-cross.svg") no-repeat;
 }
