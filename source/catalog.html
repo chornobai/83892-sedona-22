@@ -12,22 +12,24 @@
 <body class="page-body">
   <div class="container">
   <header class="page-header">
+
     <a class="page-header__logo" href="index.html">
       <img src="img/logo/logotype-mobile.svg" alt="Логотип города Седона" width="102" height="84">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list">
+        <button class="main-nav__toggle" type="button" aria-label="Закрыть меню"></button>
         <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Фото и видео</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Форма отзыва</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Фото и видео города Седона</h1>
-    <section class="intro intro--small">
+    <section class="intro">
       <h2 class="visually-hidden">Добро пожаловать в седону!</h2>
       <div class="intro__box">
         <img class="intro__slogan" src="img/logo/sedona-intro.svg" alt="Sedona" width="229" height="39">
@@ -89,9 +91,9 @@
             <div class="controls__top-slider" aria-label="Ползунок"></div>
           </div>
           <div class="controls__down button">
-            <button class="button__item button--repeat" aria-label="Воспроизвести повторно"></button>
-            <button class="button__item button--subtitles" aria-label="Субтитры"></button>
-            <button class="button__item button--fullscreen" aria-label="Полноэкранный режим"></button>
+            <button class="button__item button__item--repeat" aria-label="Воспроизвести повторно"></button>
+            <button class="button__item button__item--subtitles" aria-label="Субтитры"></button>
+            <button class="button__item button__item--fullscreen" aria-label="Полноэкранный режим"></button>
           </div>
         </div>
 
@@ -115,7 +117,7 @@
         </svg></a>
     </div>
 </footer>
-</div>
+  </div>
 </body>
 
 </html>
