@@ -60,18 +60,48 @@ img {
   color: #000000;
   background: #ffffff; }
 
+.page-header {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative; }
+
+.page-header__toggle {
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  outline: none;
+  border: none;
+  width: 23px;
+  height: 23px;
+  background: transparent url("../../img/icons/icon-menu.svg") no-repeat; }
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none; }
+  position: relative; }
 
 .main-nav__item {
-  background: #81b3d2; }
+  background: #81b3d2;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
 .main-nav__link {
+  display: block;
   color: #ffffff;
+  padding: 8px 0;
+  font-size: 18px;
+  line-height: 40px;
   text-decoration: none; }
+
+.main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  outline: none;
+  border: none;
+  width: 23px;
+  height: 23px;
+  background: transparent url("../../img/icons/icon-cross.svg") no-repeat; }
 
 .intro {
   width: 100%;
@@ -79,7 +109,8 @@ img {
   background: #81b3d2 url("../img/background/back-1.jpg") no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: -35px; }
   .intro--small {
     width: 100%;
     min-height: 158px;
