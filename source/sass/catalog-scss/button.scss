@@ -1,7 +1,30 @@
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .button__item {
   width: 16px;
   height: 20px;
   outline: none;
   border: none;
   background-color: transparent;
+
+  &--repeat {
+    margin-right: auto;
+    background-image: url("../../img/icons/replay.svg");
+  }
+
+  &--subtitles {
+
+    background-image: url("../../img/icons/subtitles.svg");
+    width: 32px;
+    height: 20px;
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../img/icons/fullscreen.svg");
+  }
 }
