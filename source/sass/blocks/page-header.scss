@@ -4,13 +4,40 @@
   position: relative;
 }
 
-.page-header__toggle {
+.page-header__logo {
   position: absolute;
-  right: 20px;
-  bottom: 50px;
+  bottom: -33px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page-header__toggle {
+  margin: 17px 20px 17px auto;
   outline: none;
   border: none;
   width: 23px;
   height: 23px;
   background: transparent url("../../img/icons/icon-menu.svg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 14px 34px;
+    flex-direction: column;
+    position: relative;
+
+    .page-header__toggle {
+      display: none;
+    }
+  }
+
+  .page-header__logo {
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    left: 550px;
+  }
 }

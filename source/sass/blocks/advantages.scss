@@ -17,3 +17,28 @@
   margin-bottom: 27px;
   padding: 0 26px;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__text {
+    padding: 0 124px;
+  }
+
+  .advantages__title {
+    padding: 0 124px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__text {
+    padding: 0 358px;
+  }
+
+  .advantages__title {
+    padding: 0 358px;
+  }
+}
