@@ -5,12 +5,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -35px;
 
   &--small {
-    width: 100%;
     min-height: 158px;
     background: $blue url("../img/background/back-1.jpg") bottom;
     background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    min-height: 518px;
+    margin-top: 0;
+    background: $blue url("../img/background/back-2.jpg");
+    background-size: cover;
+
+    .intro__slogan {
+      width: 461px;
+      height: 350px;
+    }
+
+    &--small {
+      min-height: 290px;
+      background: $blue url("../img/background/back-2.jpg") bottom;
+
+      .intro__slogan {
+        width: 456px;
+        height: 77px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background: $blue url("../img/background/back-3.png");
+    background-size: cover;
+
+    &--small {
+      min-height: 290px;
+      background: $blue url("../img/background/back-3.png") bottom;
+
+      .intro__slogan {
+        width: 459px;
+        height: 79px;
+      }
+    }
   }
 }

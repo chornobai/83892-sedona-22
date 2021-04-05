@@ -31,3 +31,10 @@
     text-transform: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .introduce {
+    grid-row: 1/2;
+    grid-column: 2/-1;
+  }
+}

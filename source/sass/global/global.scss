@@ -25,6 +25,21 @@ img {
   margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    min-width: 1200px;
+    background: $white;
+    box-shadow: $shadow-page;
+  }
+}
+
+
 .button--blue {
   font-family: inherit;
   text-transform: uppercase;

@@ -15,6 +15,8 @@
 }
 
 .location__button {
+  margin-bottom: 20px;
+
   &--blue {
     font-family: inherit;
     text-transform: uppercase;
@@ -26,5 +28,42 @@
     background: $blue;
     outline: none;
     border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .location {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .location__button {
+    margin: 0 160px 20px 160px;
+
+    &--blue {
+      padding: 14px 0;
+    }
+  }
+
+  .location__title {
+    font-size: 30px;
+  }
+
+  .location__text {
+    padding: 0 167px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__text {
+    padding: 0 383px;
+  }
+
+  .location__button {
+    margin: 0 383px 20px 383px;
   }
 }

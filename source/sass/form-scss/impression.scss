@@ -13,3 +13,10 @@
   font-weight: 700;
   text-transform: none;
 }
+
+@media (min-width: $tablet-width) {
+  .impression {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}

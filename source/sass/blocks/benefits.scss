@@ -27,3 +27,27 @@
 .benefits__text {
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .benefits--special {
+    padding: 41px 33px 63px;
+
+    .benefits__item {
+      padding: 0 49px;
+    }
+  }
+
+  .benefits--row {
+    .benefits__item-picture {
+      grid-column: span 2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits--special {
+    .benefits__title {
+      padding: 0 100px;
+    }
+  }
+}

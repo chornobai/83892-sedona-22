@@ -1,12 +1,11 @@
 
 .main-nav__list {
   @include reset;
-  position: relative;
 }
 
 .main-nav__item {
   background: $blue;
-  box-shadow: $shadow-menu;
+  box-shadow: $shadow;
 }
 
 .main-nav__link {
@@ -21,10 +20,39 @@
 .main-nav__toggle {
   position: absolute;
   right: 20px;
-  top: 17px;
+  top: 15px;
   outline: none;
   border: none;
   width: 23px;
   height: 23px;
-  background: transparent url("../../img/icons/icon-cross.svg") no-repeat;
+  background: transparent url("../img/icons/icon-cross.svg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link {
+    color: $black;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  .main-nav__item {
+    background: transparent;
+    box-shadow: none;
+
+    &:nth-child(3) {
+      margin-right: 180px;
+      margin-left: 20px;
+    }
+  }
 }

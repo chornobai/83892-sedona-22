@@ -1,9 +1,8 @@
 .social-list {
   display: flex;
   justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+  @include reset;
   margin-bottom: 45px;
 
   &--twitter {
@@ -23,4 +22,10 @@
   display: block;
   width: 46px;
   height: 48px;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    margin: 0;
+  }
 }

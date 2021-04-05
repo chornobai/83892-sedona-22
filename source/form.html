@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="../favicon.ico">
@@ -11,29 +12,33 @@
 
 <body class="page-body">
   <div class="container">
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__image" src="img/logo/logotype-mobile.svg" alt="Логотип города Седона" width="102"
-        height="84">
-    </a>
-    <nav class="main-nav">
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-      <ul class="main-nav__list">
-        <button class="main-nav__toggle" type="button" aria-label="Закрыть меню"></button>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="page-header">
+
+      <a class="page-header__logo">
+        <picture>
+          <source srcset="img/logo/logo-sedona-3.svg" media="(min-width: 1200px)" width="187" hight="97">
+          <img class="page-header__image" src="img/logo/logo.svg" alt="Логотип города Седона" width="102" height="84">
+        </picture>
+      </a>
+  <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+      <nav class="main-nav">
+          <ul class="main-nav__list">
+          <button class="main-nav__toggle" type="button" aria-label="Закрыть меню"></button>
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
+        </ul>
+      </nav>
+
+    </header>
   <main class="page-main">
     <h1 class="visually-hidden">Форма отзыва</h1>
     <section class="intro intro--small">
       <h2 class="visually-hidden">Добро пожаловать в Cедону!</h2>
       <div class="intro__box">
         <img class="intro__slogan" src="img/logo/sedona-intro.svg" alt="Sedona" width="229" height="39">
-      </div>
+    </div>
     </section>
     <section class="review">
       <h2 class="review__title">Оставьте свой отзыв</h2>
@@ -112,6 +117,7 @@
             placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
         <button class="review__form-button button--blue" type="submit">Отправить отзыв</button>
+        <p class="review__form-required">* — обязательные поля</p>
       </form>
     </section>
   </main>

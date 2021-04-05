@@ -9,3 +9,15 @@
 .gallery__list {
   @include reset;
 }
+
+@media (min-width: $tablet-width) {
+  .gallery__text {
+    padding: 0 155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__text {
+    padding: 0 370px;
+  }
+}

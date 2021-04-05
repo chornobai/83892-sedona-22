@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="../favicon.ico">
@@ -14,14 +15,16 @@
   <header class="page-header">
 
     <a class="page-header__logo">
-      <img class="page-header__image" src="img/logo/logotype-mobile.svg" alt="Логотип города Седона" width="102"
-        height="84">
+      <picture>
+        <source srcset="img/logo/logo-sedona-3.svg" media="(min-width: 1200px)" width="187" hight="97">
+        <img class="page-header__image" src="img/logo/logo.svg" alt="Логотип города Седона" width="102" height="84">
+      </picture>
     </a>
+<button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
     <nav class="main-nav">
-      <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-      <ul class="main-nav__list">
+        <ul class="main-nav__list">
         <button class="main-nav__toggle" type="button" aria-label="Закрыть меню"></button>
-        <li class="main-nav__item"><a class="main-nav__link" href="#">Главная</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
@@ -48,12 +51,16 @@
           <p class="benefits__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </li>
         <li class="benefits__item-picture">
-          <img class="benefits__picture" src="img/content/photo-city-one-1.jpg" alt="Городской пейзаж города Седона"
+          <picture>
+            <source srcset="img/content/photo-city-2.jpg" media="(min-width: 768px)">
+            <source srcset="img/content/photo-city-3.jpg" media="(min-width: 1200px)">
+            <img class="benefits__picture" src="img/content/photo-city-one-1.jpg" alt="Городской пейзаж города Седона"
             width="520" height="260">
+          </picture>
         </li>
       </ul>
       <ul class="advantages__list feature">
-        <li class="feature__item feature__iten--house">
+        <li class="feature__item feature__item--house">
           <h3 class="feature__title">Жилье</h3>
           <p class="feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
@@ -68,8 +75,12 @@
       </ul>
       <ul class="advantages__list benefits benefits--row">
         <li class="benefits__item-picture">
-          <img class="benefits__picture" src="img/content/photo-bridge-1.jpg"
+          <picture>
+            <source srcset="img/content/photo-bridge-2.jpg" media="(min-width: 768px)">
+            <source srcset="img/content/photo-bridge-3.jpg" media="(min-width: 1200px)">
+            <img class="benefits__picture" src="img/content/photo-bridge-1.jpg"
             alt="Пейзаж достопримечательности Мост Дьявола" width="520" height="260">
+        </picture>
         </li>
         <li class="benefits__item">
           <h3 class="benefits__title">Там есть мост дьявола</h3>
@@ -81,7 +92,7 @@
         <li class="benefits__item">
           <h3 class="benefits__title">Небольшая площадь</h3>
           <p class="benefits__number">№3</p>
-          <p class="benefits__text">Все интересные места находятся очень близко</p>
+          <p class="">Все интересные места находятся очень близко</p>
         </li>
         <li class="benefits__item">
           <h3 class="benefits__title">Красивая дорога</h3>

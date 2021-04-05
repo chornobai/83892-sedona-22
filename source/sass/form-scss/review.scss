@@ -11,3 +11,42 @@
   line-height: 26px;
   font-weight: 700;
 }
+
+.review__form-required {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review__title {
+    padding: 0 166px;
+  }
+
+  .review__text {
+    padding: 0 166px;
+  }
+
+  .review__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (4, 1fr);
+  }
+
+  .review__form-required {
+    display: block;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .review__title {
+    padding: 0 382px;
+  }
+
+  .review__text {
+    padding: 0 382px;
+  }
+
+  .review__form {
+    padding: 0 120px;
+  }
+}
