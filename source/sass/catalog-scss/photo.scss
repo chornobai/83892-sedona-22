@@ -1,12 +1,8 @@
 .photo__item {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
   text-align: left;
 }
 
 .photo__title {
-  grid-row: 2/3;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -25,13 +21,12 @@
   .photo {
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
   }
 
   .photo__item {
     flex-basis: 50%;
 
-    & img {
+    & .photo__picture {
       width: 100%;
     }
 
@@ -39,14 +34,33 @@
       flex-basis: 100%;
     }
   }
+
+  .photo__caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: $light-grey;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .photo__item {
     flex-basis: 33.333%;
+    position: relative;
 
     &--wide {
       flex-basis: 100%;
     }
+  }
+
+  .photo__caption {
+    position: absolute;
+    background: $black-opacity;
+    bottom: 5px;
+    z-index: 3;
+    color: $white;
   }
 }

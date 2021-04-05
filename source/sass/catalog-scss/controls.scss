@@ -38,3 +38,16 @@
   height: 66px;
   background: $light-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .controls {
+    width: 648px;
+    bottom: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls {
+    width: 800px;
+  }
+}

@@ -1,5 +1,4 @@
 .video {
-
   margin-bottom: 50px;
 }
 
@@ -17,13 +16,28 @@
   position: relative;
 }
 
+
 @media (min-width: $tablet-width) {
+  video {
+    width: 648px;
+    height: 686px;
+  }
+
   .video__text {
     padding: 0 160px;
+  }
+
+  .video__title {
+    font-size: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  video {
+    width: 800px;
+    height: 684px;
+  }
+
   .video__text {
     padding: 0 337px;
   }
