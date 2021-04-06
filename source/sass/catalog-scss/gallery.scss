@@ -17,6 +17,9 @@
 }
 
 @media (min-width: $desktop-width) {
+  .gallery{
+    padding: 0;
+  }
   .gallery__text {
     padding: 0 370px;
   }
