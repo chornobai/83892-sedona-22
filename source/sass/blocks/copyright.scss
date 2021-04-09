@@ -10,3 +10,14 @@
   margin: 0;
   margin-right: 10px;
 }
+
+.copyright__link {
+  &:hover svg path {
+    fill: $blue;
+  }
+
+  &:active svg path {
+    fill: $black;
+    opacity: 0.3;
+  }
+}

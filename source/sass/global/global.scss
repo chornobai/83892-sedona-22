@@ -51,4 +51,18 @@ img {
   background: $blue;
   outline: none;
   border: none;
+
+  &:hover {
+    background: $blue-hover;
+  }
+
+  &:active {
+    color: $white-opacity;
+    background: $blue-active;
+  }
+
+  &--disabled {
+    background: $grey;
+    color: $white;
+  }
 }

@@ -9,6 +9,7 @@
   bottom: -33px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
 }
 
 .page-header__toggle {
@@ -17,7 +18,15 @@
   border: none;
   width: 23px;
   height: 23px;
-  background: transparent url("../../img/icons/icon-menu.svg") no-repeat;
+  background: transparent url("../img/icons/icon-menu.svg") no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -38,6 +47,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    left: 550px;
+    width: 187px;
+    height: 97px;
   }
 }

@@ -4,24 +4,25 @@
 
   @include reset;
   margin-bottom: 45px;
-
-  &--twitter {
-    background: url("../img/icons/twitter.svg");
-  }
-
-  &--facebook {
-    background: url("../img/icons/facebook.svg");
-  }
-
-  &--youtube {
-    background: url("../img/icons/youtube.svg");
-  }
 }
 
 .social-list__link {
   display: block;
   width: 46px;
   height: 48px;
+  margin-left: 6px;
+
+  &:hover svg rect {
+    fill: $blue-hover;
+  }
+
+  &:active svg rect {
+    fill: $blue-active;
+  }
+
+  &:active svg path {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
