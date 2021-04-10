@@ -5,6 +5,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    height: 57px;
+    background: url("../img/decor/intro-triangl.svg") no-repeat center;
+  }
 
   &--small {
     min-height: 158px;
@@ -19,6 +29,15 @@
     margin-top: 0;
     background: $blue url("../img/background/back-2.jpg");
     background-size: cover;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      bottom: -1px;
+      height: 59px;
+      background: url("../img/decor/intro-triangle-2.svg") no-repeat center;
+    }
 
     .intro__slogan {
       width: 461px;
@@ -41,6 +60,15 @@
   .intro {
     background: $blue url("../img/background/back-3.png");
     background-size: cover;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      bottom: -1px;
+      height: 55px;
+      background: url("../img/decor/intro-triangle-3.svg") no-repeat center;
+    }
 
     &--small {
       min-height: 290px;

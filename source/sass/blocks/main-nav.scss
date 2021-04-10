@@ -5,7 +5,16 @@
 
 .main-nav__item {
   background: $blue;
-  box-shadow: $shadow;
+  border-top: 1px solid $light-blue;
+  border-bottom: 1px solid $blue-active;
+
+  &:hover {
+    background: $blue-hover;
+  }
+
+  &:active {
+    background: $blue-active;
+  }
 }
 
 .main-nav__link {
@@ -15,6 +24,10 @@
   font-size: 18px;
   line-height: 40px;
   text-decoration: none;
+
+  &:active {
+    color: $white-opacity;
+  }
 }
 
 .main-nav__toggle {
@@ -26,12 +39,38 @@
   width: 23px;
   height: 23px;
   background: transparent url("../img/icons/icon-cross.svg") no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
     display: grid;
     grid-template-columns: repeat(4, auto);
+  }
+
+  .main-nav__item {
+    background: transparent;
+    border: none;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:active {
+      background: transparent;
+    }
+
+    &:nth-child(3) {
+      margin-right: 180px;
+      margin-left: 20px;
+    }
   }
 
   .main-nav__toggle {
@@ -44,15 +83,36 @@
     line-height: 26px;
     font-weight: 700;
     padding: 0;
-  }
 
-  .main-nav__item {
-    background: transparent;
-    box-shadow: none;
+    &:hover {
+      color: $blue;
+    }
 
-    &:nth-child(3) {
-      margin-right: 180px;
-      margin-left: 20px;
+    &:focus {
+      color: $grey-brown;
+    }
+
+    &:active {
+      color: $black;
+      opacity: 0.3;
+    }
+
+    &--active {
+      color: $grey-brown;
+
+      &:hover {
+        color: $grey-brown-dark;
+      }
+
+      &:focus {
+        background: $white;
+        color: $grey-brown-dark;
+      }
+
+      &:active {
+        color: $grey-brown-dark;
+        opacity: 0.3;
+      }
     }
   }
 }

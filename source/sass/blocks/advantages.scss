@@ -1,5 +1,17 @@
 .advantages {
   padding-top: 32px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 175px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 58px;
+    background: url("../img/decor/reverse-triangl.svg") no-repeat center;
+  }
 }
 
 .advantages__title {
@@ -19,6 +31,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    &::after {
+      display: none;
+    }
+  }
+
   .advantages__text {
     padding: 0 124px;
   }
