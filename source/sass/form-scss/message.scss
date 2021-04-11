@@ -1,12 +1,3 @@
-.message__label {
-  display: block;
-  text-align: center;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
 .message__text {
   padding: 13px 23px 29px 21px;
   background: $light-grey;
@@ -29,5 +20,11 @@
 @media (min-width: $tablet-width) {
   .message {
     grid-column: 1/-1;
+    border-top: 1px solid $grey-border;
+
+    .review__form-legend {
+      padding: 0 100px;
+      margin-bottom: 20px;
+    }
   }
 }
