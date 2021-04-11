@@ -2,11 +2,15 @@
   @include reset;
 
   li {
+    padding-left: 71px;
+    margin-bottom: 52px;
     text-align: left;
   }
 }
 
 .attractions__label {
+  display: block;
+  position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -14,15 +18,62 @@
   text-transform: none;
 }
 
+.attractions__input + label::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -71px;
+  width: 46px;
+  height: 46px;
+  border-radius: 2px;
+  background-color: $light-grey;
+  cursor: pointer;
+}
+
+.attractions__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -57px;
+  width: 23px;
+  height: 16px;
+  background: url("../img/icons/tick.svg");
+  cursor: pointer;
+}
+
+.attractions__input:hover + label::before {
+  background: $grey-dark;
+}
+
+.attractions__input:active + label::before {
+  background: $grey-next;
+}
+
+.attractions__input:focus + label::before {
+  background: $grey-next;
+}
+
+.attractions__input:active + label::after {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .attractions {
     grid-row: 3/4;
     grid-column: 1/-1;
+    border-top: 1px solid $grey-border;
+
+    .review__form-legend {
+      padding: 0 100px;
+      margin-bottom: 20px;
+    }
   }
 
   .attractions__list {
     display: grid;
     grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    justify-content: center;
   }
 }
 

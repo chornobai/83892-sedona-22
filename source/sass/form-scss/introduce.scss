@@ -1,10 +1,16 @@
+.introduce {
+  margin-bottom: 0;
+}
+
 .introduce__list {
   @include reset;
 
   li {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     margin-bottom: 20px;
+
 
     &:last-child {
       margin-bottom: 0;
@@ -14,13 +20,28 @@
 
 .introduce__label {
   line-height: 26px;
+  margin-right: 20px;
 }
 
 .introduce__input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
   border: none;
   outline: none;
-  padding: 18px 0 22px 14px;
+  padding: 18px 0 14px 22px;
   background: $light-grey;
+  width: 100%;
+
+  &:hover {
+    background: $grey-dark;
+  }
+
+  &:focus {
+    background: $white;
+    box-shadow: 0 0 0 4px $grey-dark;
+  }
 
   &::placeholder {
     color: $black;

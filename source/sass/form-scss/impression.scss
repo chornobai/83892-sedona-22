@@ -3,10 +3,18 @@
 
   li {
     text-align: left;
+    padding-left: 71px;
+    margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
   }
 }
 
 .impression__label {
+  display: block;
+  position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -14,9 +22,50 @@
   text-transform: none;
 }
 
+.impression__input + label::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -71px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: $light-grey;
+  cursor: pointer;
+}
+
+.impression__input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -56px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $black-next;
+  cursor: pointer;
+}
+
+.impression__input:hover + label::before {
+  background: $grey-dark;
+}
+
+.impression__input:active + label::before {
+  background: $grey-next;
+}
+
+.impression__input:focus + label::before {
+  background: $grey-next;
+}
+
+.impression__input:active + label::after {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .impression {
     grid-column: 1/2;
     grid-row: 1/2;
+    border-right: 1px solid $grey-border;
   }
 }
