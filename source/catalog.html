@@ -48,8 +48,8 @@
         <ul class="gallery__list photo">
           <li class="photo__item photo__item--wide">
             <picture>
-              <source srcset="../img/content/photo-catalog-1-3.jpg" media="(min-width: 1200px)">
-              <source srcset="../img/content/photo-catalog-1-2.jpg" media="(min-width: 768px)">
+              <source srcset="img/content/photo-catalog-1-3.jpg" media="(min-width: 1200px)">
+              <source srcset="img/content/photo-catalog-1-2.jpg" media="(min-width: 768px)">
               <img class="photo__picture" src="img/content/photo-catalog-1.jpg" alt="Пейзаж Седоны, дорога на закате"
                 width="280" height="280">
             </picture>
@@ -107,28 +107,43 @@
             </div>
           </li>
         </ul>
-      </section>
-      <section class="video">
-        <h2 class="visually-hidden">Видео городка Седона</h2>
-        <p class="video__title">Все еще сомневаетесь?</p>
-        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-        </p>
-        <div class="video__item">
-          <video width="320" height="201" poster="img/content/video-catalog-3.jpg">
-            <source src="#" type="video/mp4">
-          </video>
+
+        <section class="gallery__item video">
+          <h2 class="visually-hidden">Видео городка Седона</h2>
+          <p class="video__title">Все еще сомневаетесь?</p>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+          </p>
+          <div class="video__item">
+            <video width="320" height="201" poster="img/content/video-catalog-3.jpg">
+              <source src="#" type="video/mp4">
+            </video>
+          </div>
           <div class="video__controls controls">
             <div class="controls__top">
               <div class="controls__top-scale" aria-label="Место воспроизведения"></div>
               <div class="controls__top-slider" aria-label="Ползунок"></div>
             </div>
             <div class="controls__down button">
-              <button class="button__item button__item--repeat" aria-label="Воспроизвести повторно"></button>
-              <button class="button__item button__item--subtitles" aria-label="Субтитры"></button>
-              <button class="button__item button__item--fullscreen" aria-label="Полноэкранный режим"></button>
+              <button class="button__item button__item--repeat" aria-label="Воспроизвести повторно"><svg width="16"
+                  height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 4V0L3 5l5 5V6a6 6 0 016 6 6 6 0 01-6 6 6 6 0 01-6-6H0a8 8 0 008 8 8 8 0 008-8 8 8 0 00-8-8z"
+                    fill="#5C6870" />
+                </svg></button>
+              <button class="button__item button__item--subtitles" aria-label="Субтитры"><svg width="32" height="20"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M29 0H3a3 3 0 00-3 3v14a3 3 0 003 3h26a3 3 0 003-3V3a3 3 0 00-3-3zM14.4 15.9l-1.7.1c-.7 0-1.4-.1-2-.3-.6-.2-1.2-.6-1.6-1-.4-.4-.8-1.1-1.1-1.9-.3-.8-.4-1.7-.4-2.8 0-1.1.2-2.1.5-2.9.3-.8.7-1.4 1.2-1.9s1.1-.8 1.7-1a10 10 0 013.5-.1l1.1.3-.4 1.9-.9-.3H13c-.9 0-1.6.3-2.2 1-.6.7-.8 1.7-.8 3l.2 1.6c.1.5.3.9.6 1.3l1 .8c.4.2.9.3 1.4.3l1.3-.1.9-.4.5 1.8-1.5.6zm8.7 0l-1.7.1c-.7 0-1.4-.1-2-.3-.6-.2-1.2-.6-1.6-1a4 4 0 01-1.1-1.9c-.3-.8-.4-1.7-.4-2.8 0-1.1.2-2.1.5-2.9.3-.8.7-1.4 1.2-1.9s1.1-.8 1.7-1a10 10 0 013.5-.1l1.1.3-.4 1.9L23 6h-1.3c-.9 0-1.6.3-2.2 1-.6.7-.8 1.7-.8 3l.2 1.6c.1.5.3.9.6 1.3l1 .8c.4.2.9.3 1.4.3l1.3-.1.9-.4.5 1.8-1.5.6z"
+                    fill="#5C6870" />
+                </svg></button>
+              <button class="button__item button__item--fullscreen" aria-label="Полноэкранный режим"><svg width="20"
+                  height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v6h3V3h3V0H0zM3 14H0v6h6v-3H3v-3zM17 0h-3v3h3v3h3V0h-3zM17 17h-3v3h6v-6h-3v3z"
+                    fill="#5C6870" />
+                </svg></button>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </main>
     <footer class="footer">

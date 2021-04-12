@@ -1,5 +1,11 @@
 .video {
+  position: relative;
   margin-bottom: 50px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
 }
 
 .video__title {
@@ -9,36 +15,25 @@
 }
 
 .video__text {
-  padding: 0 25px;
+  line-height: 24px;
 }
-
-.video__item {
-  position: relative;
-}
-
 
 @media (min-width: $tablet-width) {
-  video {
-    width: 648px;
-    height: 686px;
+  .video__title {
+    font-size: 30px;
   }
 
   .video__text {
-    padding: 0 160px;
-  }
-
-  .video__title {
-    font-size: 30px;
+    padding: 0 100px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  video {
-    width: 800px;
-    height: 684px;
+  .video {
+    margin: 50px 200px;
   }
 
   .video__text {
-    padding: 0 337px;
+    padding: 0 170px;
   }
 }
