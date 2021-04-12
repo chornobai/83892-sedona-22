@@ -1,3 +1,7 @@
+.photo {
+  padding: 0 20px;
+}
+
 .photo__item {
   text-align: left;
 }
@@ -21,6 +25,7 @@
   .photo {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .photo__item {
