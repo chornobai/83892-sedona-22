@@ -7,8 +7,8 @@
 }
 
 .photo__picture {
+  display: block;
   width: 100%;
-  height: auto;
 }
 
 .photo__title {
@@ -68,7 +68,7 @@
   .photo__caption {
     position: absolute;
     background: $black-opacity;
-    bottom: 5px;
+    bottom: 0;
     z-index: 3;
     color: $white;
   }

@@ -10,9 +10,9 @@
       background: $blue;
     }
 
-    .benefits__item-picture {
+    .benefits__picture {
+      display: block;
       width: 100%;
-      height: 260px;
     }
 
     .benefits__number {
@@ -82,11 +82,6 @@
   .benefits--row {
     .benefits__item-picture {
       grid-column: span 2;
-
-      img {
-        width: 100%;
-        height: 100%;
-      }
     }
 
     .benefits__item {
