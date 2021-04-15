@@ -6,6 +6,11 @@
   text-align: left;
 }
 
+.photo__picture {
+  display: block;
+  width: 100%;
+}
+
 .photo__title {
   font-size: 14px;
   line-height: 24px;
@@ -18,6 +23,7 @@
 .photo__author {
   line-height: 24px;
   text-transform: none;
+  margin: 0;
 }
 
 
@@ -31,25 +37,23 @@
   .photo__item {
     flex-basis: 50%;
 
-    & .photo__picture {
-      width: 100%;
-    }
-
     &--wide {
       flex-basis: 100%;
     }
   }
+
 
   .photo__caption {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 15px 20px;
     background: $light-grey;
     box-sizing: border-box;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .photo__item {
@@ -64,7 +68,7 @@
   .photo__caption {
     position: absolute;
     background: $black-opacity;
-    bottom: 5px;
+    bottom: 0;
     z-index: 3;
     color: $white;
   }
