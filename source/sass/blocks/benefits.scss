@@ -6,7 +6,7 @@
   &--row {
     .benefits__item {
       color: $white;
-      padding: 34px 13px;
+      padding: 48px 13px 40px 13px;
       background: $blue;
     }
 
@@ -16,6 +16,8 @@
     }
 
     .benefits__number {
+      margin: 12px 0 16px 0;
+
       &::before {
         content: "— ";
         color: $white;
@@ -28,17 +30,27 @@
     }
   }
 
+  &--reverse {
+    .benefits__item {
+      padding: 38px 13px 36px 13px;
+    }
+  }
+
   &--special {
     background: $grey;
-    padding: 0 41px;
+    padding: 0 20px;
 
     .benefits__item {
-      padding: 25px 0;
+      padding: 25px 15px;
     }
 
     .benefits__item:nth-child(2) {
       border-top: 1px solid $grey-next;
       border-bottom: 1px solid $grey-next;
+    }
+
+    .benefits__number {
+      margin: 12px 0 16px 0;
     }
   }
 }
@@ -68,10 +80,23 @@
 
 @media (min-width: $tablet-width) {
   .benefits--special {
-    padding: 41px 33px 63px;
+    padding: 41px 0 45px 0;
 
     .benefits__item {
-      padding: 0 49px;
+      padding: 0 20px;
+    }
+
+    .benefits__title {
+      font-size: 21px;
+      padding: 0 30px;
+    }
+
+    .benefits__text {
+      padding: 0 20px;
+    }
+
+    .benefits__number {
+      margin-bottom: 25px;
     }
 
     .benefits__item:nth-child(2) {
@@ -85,7 +110,31 @@
     }
 
     .benefits__item {
-      padding: 40px 36px;
+      padding: 40px 26px;
+
+      .benefits__title {
+        font-size: 21px;
+      }
+
+      .benefits__number {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .benefits--reverse {
+    .benefits__item {
+      padding: 42px 36px 0 36px;
+      grid-column: 3/-1;
+      grid-row: 3/4;
+    }
+
+    .benefits__title {
+      padding: 0 17px;
+    }
+
+    .benefits__item-picture {
+      grid-row: 3/4;
     }
   }
 }
@@ -93,7 +142,7 @@
 @media (min-width: $desktop-width) {
   .benefits--row {
     .benefits__item {
-      padding: 56px 43px;
+      padding: 48px 59px;
     }
 
     .benefits__title {
@@ -103,8 +152,33 @@
   }
 
   .benefits--special {
+    padding-top: 43px;
+    padding-bottom: 61px;
+
     .benefits__title {
       padding: 0 100px;
+    }
+  }
+
+  .benefits--reverse {
+    .benefits__item {
+      padding-top: 51px;
+    }
+
+    .benefits__title {
+      padding: 0 66px;
+    }
+
+    .benefits__text {
+      padding: 0 30px;
+    }
+  }
+
+  .benefits__item {
+    &:nth-child(2) {
+      .benefits__text {
+        padding: 0 45px;
+      }
     }
   }
 }

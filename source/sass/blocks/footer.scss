@@ -1,5 +1,5 @@
 .footer {
-  padding: 26px 0;
+  padding: 33px 0;
 }
 
 .footer__link {
@@ -9,23 +9,26 @@
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
+    padding: 37px 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .footer__link {
     margin: 0;
+    margin-right: 13px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 26px 120px;
+    padding: 36px;
+    justify-content: space-around;
   }
 }

@@ -17,9 +17,14 @@
     content: "";
     width: 100%;
     bottom: 0;
-    height: 56px;
+    height: 57px;
     background: url("../img/decor/intro-triangl.svg") no-repeat center;
   }
+
+  .intro__box {
+    height: 210px;
+  }
+
 
   &--small {
     min-height: 158px;
@@ -35,8 +40,8 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    min-height: 518px;
-    margin-top: 0;
+    height: 518px;
+    align-items: flex-start;
     background: $blue url("../img/background/bg-tablet.jpg");
     background-size: cover;
 
@@ -50,11 +55,12 @@
       content: "";
       width: 100%;
       bottom: 0;
-      height: 56px;
+      height: 57px;
       background: url("../img/decor/intro-triangle-2.svg") no-repeat center;
     }
 
     .intro__slogan {
+      padding-top: 77px;
       width: 461px;
       height: 350px;
     }
@@ -91,7 +97,7 @@
       content: "";
       width: 100%;
       bottom: -1px;
-      height: 55px;
+      height: 59px;
       background: url("../img/decor/intro-triangle-3.svg") no-repeat center;
     }
 

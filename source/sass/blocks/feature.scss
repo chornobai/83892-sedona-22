@@ -1,16 +1,18 @@
 .feature {
   @include reset;
-  padding: 35px 21px 35px 71px;
+  padding: 34px 21px 12px 70px;
   text-align: left;
 }
 
 
 .feature__item {
+  position: relative;
+  margin-bottom: 25px;
+
   &::before {
-    display: block;
+    position: absolute;
     content: "";
     background-size: cover;
-    transform: translate(-55px, 50px);
   }
 
   &--house {
@@ -18,6 +20,7 @@
       width: 39px;
       height: 37px;
       background: url("../img/icons/icon-house.svg") no-repeat;
+      transform: translate(-48px, -8px);
     }
   }
 
@@ -26,6 +29,11 @@
       width: 32px;
       height: 38px;
       background: url("../img/icons/icon-gift.svg") no-repeat;
+      transform: translate(-45px, -10px);
+    }
+
+    br {
+      display: none;
     }
   }
 
@@ -34,20 +42,22 @@
       width: 40px;
       height: 35px;
       background: url("../img/icons/icon-burger.svg") no-repeat;
+      transform: translate(-52px, -3px);
     }
   }
 }
 
 .feature__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: $tablet-width) {
   .feature {
     text-align: center;
-    padding: 60px 36px;
-    grid-column-gap: 73px;
+    padding: 60px 31px 22px 31px;
+    grid-column-gap: 60px;
   }
 
   .feature__item {
@@ -56,14 +66,22 @@
     align-items: center;
 
     &::before {
-      transform: none;
+      position: static;
+      display: block;
+
       background-size: cover;
+      margin-bottom: 26px;
     }
 
     &--house {
+      .feature__text {
+        padding: 0 10px;
+      }
+
       &::before {
         width: 76px;
         height: 72px;
+        transform: translate(0, 0);
       }
     }
 
@@ -73,21 +91,50 @@
       &::before {
         width: 64px;
         height: 75px;
+        transform: translate(0, -3px);
+        margin-bottom: 22px;
       }
     }
 
     &--food {
+      .feature__text {
+        padding: 0 20px;
+      }
+
       &::before {
         width: 76px;
         height: 67px;
+        transform: translate(0, 4px);
+        margin-bottom: 30px;
       }
     }
+  }
+
+  .feature__title {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feature {
-    padding: 60px 58px;
+    padding: 60px 50px 40px 50px;
     grid-column-gap: 104px;
+  }
+
+  .feature__item {
+    &--food {
+      .feature__text {
+        padding: 0;
+      }
+    }
+
+    &--souvenir {
+      br {
+        display: block;
+      }
+    }
   }
 }

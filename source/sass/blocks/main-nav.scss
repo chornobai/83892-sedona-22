@@ -20,7 +20,7 @@
 .main-nav__link {
   display: block;
   color: $white;
-  padding: 8px 0;
+  padding: 7px 0;
   font-size: 18px;
   line-height: 40px;
   text-decoration: none;
@@ -51,8 +51,8 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    display: flex;
+    justify-content: space-between;
   }
 
   .main-nav__item {
@@ -68,8 +68,8 @@
     }
 
     &:nth-child(3) {
-      margin-right: 180px;
-      margin-left: 20px;
+      margin-right: 160px;
+      margin-left: 27px;
     }
   }
 
@@ -113,6 +113,15 @@
         color: $grey-brown-dark;
         opacity: 0.3;
       }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__item {
+    &:nth-child(3) {
+      margin-right: 245px;
+      margin-left: 26px;
     }
   }
 }

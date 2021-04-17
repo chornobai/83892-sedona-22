@@ -6,14 +6,14 @@
 
 .page-header__logo {
   position: absolute;
-  bottom: -33px;
+  bottom: -46px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
 }
 
 .page-header__toggle {
-  margin: 17px 20px 17px auto;
+  margin: 15px 20px 16px auto;
   outline: none;
   border: none;
   width: 23px;
@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding: 14px 34px;
+    padding: 15px 27px 15px 48px;
     flex-direction: column;
     position: relative;
 
@@ -46,8 +46,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__image {
-    width: 187px;
-    height: 97px;
+  .page-header {
+    padding: 15px 72px 15px 90px;
   }
 }

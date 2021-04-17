@@ -1,0 +1,14 @@
+.logo-no-bg {
+  width: 102px;
+  height: 84px;
+}
+
+.logo-bg {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .logo-bg {
+    display: block;
+  }
+}
