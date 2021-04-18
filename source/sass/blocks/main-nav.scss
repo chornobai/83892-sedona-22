@@ -2,6 +2,14 @@
   @include reset;
 }
 
+.main-nav__list--close {
+  display: none;
+}
+
+.main-nav__list--open {
+  display: block;
+}
+
 .main-nav__item {
   background: $blue;
   border-top: 1px solid $light-blue;
@@ -25,30 +33,12 @@
   color: $white;
   padding: 7px 0;
   font-size: 18px;
+  font-weight: 700;
   line-height: 40px;
   text-decoration: none;
 
   &:active {
     color: $white-opacity;
-  }
-}
-
-.main-nav__toggle {
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  outline: none;
-  border: none;
-  width: 23px;
-  height: 23px;
-  background: transparent url("../img/icons/icon-cross.svg") no-repeat;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
@@ -62,6 +52,10 @@
     background: transparent;
     border: none;
 
+    &:last-child {
+      box-shadow: none;
+    }
+
     &:hover {
       background: transparent;
     }
@@ -70,14 +64,10 @@
       background: transparent;
     }
 
-    &:nth-child(3) {
+    &:nth-child(2) {
       margin-right: 160px;
       margin-left: 27px;
     }
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 
   .main-nav__link {
@@ -97,6 +87,7 @@
 
     &:active {
       color: $black;
+      font-weight: 700;
       opacity: 0.3;
     }
 
@@ -122,7 +113,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__item {
-    &:nth-child(3) {
+    &:nth-child(2) {
       margin-right: 245px;
       margin-left: 26px;
     }
