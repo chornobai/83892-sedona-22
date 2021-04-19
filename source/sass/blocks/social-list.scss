@@ -3,30 +3,46 @@
   justify-content: center;
 
   @include reset;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .social-list__link {
   display: block;
   width: 46px;
   height: 48px;
-  margin-left: 6px;
 
-  &:hover svg rect {
+
+  svg {
+    fill: $blue;
+    color: $white;
+  }
+
+  &:hover svg {
     fill: $blue-hover;
   }
 
-  &:active svg rect {
+  &:active svg {
     fill: $blue-active;
+    color: $white-opacity;
   }
+}
 
-  &:active svg path {
-    opacity: 0.3;
+.social-list__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .social-list {
-    margin: 0;
+    margin: 0 122px 0 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    margin: 0 108px 0 85px;
   }
 }

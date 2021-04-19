@@ -41,13 +41,15 @@ img {
 
 
 .button--blue {
+
   font-family: inherit;
   text-transform: uppercase;
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: $white;
-  padding: 14px 32px;
+  padding: 14px 47px 18px 47px;
   background: $blue;
   outline: none;
   border: none;

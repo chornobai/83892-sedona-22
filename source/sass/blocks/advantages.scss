@@ -1,15 +1,15 @@
 .advantages {
-  padding-top: 32px;
+  padding-top: 31px;
   position: relative;
 
   &::after {
     position: absolute;
     content: "";
     width: 100%;
-    top: 175px;
+    top: 205px;
     left: 50%;
     transform: translateX(-50%);
-    height: 58px;
+    height: 37px;
     background: url("../img/decor/reverse-triangl.svg") no-repeat center;
   }
 }
@@ -17,21 +17,23 @@
 .advantages__title {
   font-family: inherit;
   font-size: 18px;
-  line-height: 26px;
-  font-weight: 700px;
+  line-height: 27px;
+  font-weight: 700;
   margin: 0;
-  margin-bottom: 25px;
-  padding: 0 26px;
+  margin-bottom: 29px;
+  padding: 0 25px 0 25px;
 }
 
 .advantages__text {
   margin: 0;
-  margin-bottom: 27px;
-  padding: 0 26px;
+  line-height: 26px;
+  padding: 0 26px 34px 26px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
+    padding-top: 43px;
+
     &::after {
       display: none;
     }
@@ -39,10 +41,15 @@
 
   .advantages__text {
     padding: 0 124px;
+    margin-bottom: 52px;
   }
 
   .advantages__title {
-    padding: 0 124px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0 120px 0 118px;
+    margin-bottom: 32px;
   }
 
   .advantages__list {
@@ -52,11 +59,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    padding-top: 55px;
+  }
+
   .advantages__text {
     padding: 0 358px;
+    margin-bottom: 41px;
   }
 
   .advantages__title {
-    padding: 0 358px;
+    font-weight: 700;
+    padding: 0 358px 0 354px;
   }
 }

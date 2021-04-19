@@ -1,14 +1,16 @@
+.impression {
+  margin-top: 20px;
+  padding-top: 38px;
+  padding-bottom: 0;
+}
+
 .impression-list {
   @include reset;
 
   li {
     text-align: left;
-    padding-left: 71px;
-    margin-bottom: 52px;
-
-    &:last-child {
-      margin-bottom: 25px;
-    }
+    padding-left: 78px;
+    margin-bottom: 43px;
   }
 }
 
@@ -25,10 +27,10 @@
 .impression__input + label::before {
   content: "";
   position: absolute;
-  top: -7px;
-  left: -71px;
-  width: 48px;
-  height: 48px;
+  top: -16px;
+  left: -78px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background-color: $light-grey;
   cursor: pointer;
@@ -37,10 +39,10 @@
 .impression__input:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -56px;
-  width: 18px;
-  height: 18px;
+  top: 2px;
+  left: -60px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: $black-next;
   cursor: pointer;
@@ -66,6 +68,43 @@
   .impression {
     grid-column: 1/2;
     grid-row: 1/2;
-    border-right: 1px solid $grey-border;
+    padding-top: 72px;
+    padding-left: 0;
+    margin-top: 0;
+    position: relative;
+    text-align: left;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 292px;
+      background: $grey-border;
+      top: -23px;
+      right: 0;
+    }
+  }
+
+  .impression-list {
+    li {
+      margin-bottom: 53px;
+      padding-left: 77px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .impression {
+    .review__form-legend {
+      margin-left: 80px;
+    }
+  }
+
+  .impression-list {
+    padding-left: 5px;
   }
 }

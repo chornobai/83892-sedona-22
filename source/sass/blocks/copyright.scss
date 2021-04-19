@@ -8,15 +8,19 @@
   display: block;
   line-height: 26px;
   margin: 0;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .copyright__link {
-  &:hover svg path {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  &:hover svg {
     fill: $blue;
   }
 
-  &:active svg path {
+  &:active svg {
     fill: $black;
     opacity: 0.3;
   }

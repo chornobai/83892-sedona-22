@@ -1,9 +1,14 @@
+.message {
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
 .message__text {
   padding: 13px 23px 29px 21px;
   background: $light-grey;
   border: none;
   outline: none;
-  margin-bottom: 50px;
+  margin-bottom: 17px;
   width: 100%;
   box-sizing: border-box;
 
@@ -20,11 +25,56 @@
 @media (min-width: $tablet-width) {
   .message {
     grid-column: 1/-1;
-    border-top: 1px solid $grey-border;
+    padding-bottom: 27px;
 
     .review__form-legend {
-      padding: 0 100px;
-      margin-bottom: 20px;
+      margin-bottom: 39px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 123px;
+        height: 1px;
+        top: 9px;
+        right: -198px;
+        background: $grey-border;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 123px;
+        height: 1px;
+        top: 9px;
+        left: -198px;
+        background: $grey-border;
+      }
+    }
+  }
+
+  .message__text {
+    margin-bottom: 0;
+    padding: 19px 23px 21px 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .message {
+    padding: 15px 0 28px 0;
+
+    .review__form-legend {
+      &::after {
+        width: 280px;
+        top: 10px;
+        right: -340px;
+      }
+
+      &::before {
+        width: 280px;
+        top: 10px;
+        left: -340px;
+      }
     }
   }
 }
