@@ -1,21 +1,44 @@
+.review {
+  padding: 21px 0 43px 0;
+}
+
+.review__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 29px;
+}
+
+.review__text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
 .review__form {
+  padding-top: 20px;
   box-sizing: border-box;
   border-top: 1px solid $grey;
+
+  .button--blue {
+    line-height: 26px;
+    padding: 17px 47px 15px 51px;
+  }
 }
 
 .review__form-fieldset {
   border: none;
   position: relative;
-  padding: 20px;
+  padding: 19px 20px 25px 20px;
   margin: 0;
   border-bottom: 1px solid $grey;
 }
 
 .review__form-legend {
+  display: block;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 0;
 }
 
 .review__form-required {
@@ -23,23 +46,32 @@
 }
 
 @media (min-width: $tablet-width) {
+  .review {
+    padding: 37px 0 43px 0;
+  }
+
   .review__title {
     font-size: 30px;
     padding: 0 166px;
+    margin-bottom: 34px;
   }
 
   .review__text {
     padding: 0 166px;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
 
   .review__form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat (4, 1fr);
-    grid-row-gap: 50px;
-    grid-column-gap: 20px;
+    grid-row-gap: 25px;
+    padding: 40px 60px 17px 60px;
     border: none;
+
+    .button--blue {
+      padding: 17px 47px 15px 39px;
+    }
   }
 
   .review__form-fieldset {
@@ -55,20 +87,31 @@
   .review__form-required {
     display: block;
     justify-self: end;
+    margin: 22px 0 0 0;
   }
 }
 
 
 @media (min-width: $desktop-width) {
+  .review {
+    padding: 86px 0 43px 0;
+  }
+
   .review__title {
     padding: 0 382px;
   }
 
   .review__text {
     padding: 0 382px;
+    margin-bottom: 57px;
   }
 
   .review__form {
     padding: 0 120px;
+    margin-bottom: 23px;
+
+    .button--blue {
+      padding: 17px 47px 15px 45px;
+    }
   }
 }

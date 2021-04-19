@@ -1,4 +1,5 @@
 .contacts {
+  margin-top: 20px;
   margin-bottom: 0;
 }
 
@@ -6,12 +7,19 @@
   @include reset;
 
   li {
-    margin-bottom: 14px;
+    text-align: left;
+    margin-bottom: 16px;
 
     &:last-child {
       margin-bottom: 0;
     }
   }
+}
+
+.contacts__label {
+  display: block;
+  padding-left: 23px;
+  margin-bottom: 9px;
 }
 
 .contacts__input {
@@ -20,7 +28,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  padding: 18px 0 14px 22px;
+  padding: 19px 0 15px 22px;
   background: $light-grey;
   border: none;
   outline: none;
@@ -31,6 +39,7 @@
   }
 
   &--email {
+    padding: 18px 0 15px 22px;
     background: $light-grey url("../img/icons/icon-form-mail.svg") no-repeat right;
   }
 
@@ -57,46 +66,101 @@
   .contacts {
     grid-row: 2/3;
     grid-column: 1/-1;
-    border-top: 1px solid $grey-border;
+    padding: 24px 0 13px 0;
 
     .review__form-legend {
-      padding: 0 100px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 123px;
+        height: 1px;
+        top: 11px;
+        right: -183px;
+        background: $grey-border;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 123px;
+        height: 1px;
+        top: 11px;
+        left: -183px;
+        background: $grey-border;
+      }
     }
   }
 
   .contacts__list {
     text-align: left;
+
+    li {
+      margin-bottom: 25px;
+    }
   }
 
   .contacts__label {
     display: block;
     padding-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
   }
 }
 
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding: 70px 0 13px 0;
+
+    .review__form-legend {
+      &::after {
+        width: 280px;
+        top: 10px;
+        right: -340px;
+      }
+
+      &::before {
+        width: 280px;
+        top: 10px;
+        left: -340px;
+      }
+    }
+  }
+
   .contacts__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .contacts__label {
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 16px;
     margin-bottom: 0;
   }
 
   .contacts__list li {
     margin: 0;
+    margin-right: 78px;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: max-content auto;
     align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+
+      .contacts__label {
+        padding-right: 20px;
+      }
+    }
   }
 
   .contacts__label-word {
     display: none;
+  }
+
+  .contacts__input {
+    padding-right: 95px;
   }
 }
