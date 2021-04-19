@@ -1,14 +1,18 @@
 .photo {
-  padding: 0 20px;
+  border-bottom: 1px solid $grey-border;
+  margin-bottom: 32px;
 }
 
 .photo__item {
   text-align: left;
+  padding: 22px 20px 2px 20px;
+  border-top: 1px solid $grey-border;
 }
 
 .photo__picture {
   display: block;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .photo__title {
@@ -32,30 +36,49 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    border: none;
+    margin-bottom: 57px;
   }
 
   .photo__item {
     flex-basis: 50%;
+    border: none;
+    padding: 0;
 
     &--wide {
       flex-basis: 100%;
+
+      .photo__caption {
+        padding-right: 20px;
+      }
     }
   }
 
+  .photo__picture {
+    margin-bottom: 0;
+  }
 
   .photo__caption {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 15px 20px;
+    padding: 14px 30px 14px 20px;
     background: $light-grey;
     box-sizing: border-box;
+
+    &--special {
+      padding-right: 35px;
+      background: $grey-catalog;
+    }
   }
 }
 
-
 @media (min-width: $desktop-width) {
+  .photo {
+    margin-bottom: 61px;
+  }
+
   .photo__item {
     flex-basis: 33.333%;
     position: relative;
