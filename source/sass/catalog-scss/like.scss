@@ -5,10 +5,15 @@
 
 .like__button {
   border: none;
-  background: transparent url("../img/icons/like-icon.svg") no-repeat;
+  background: transparent;
   width: 23px;
   height: 21px;
-  margin-right: 14px;
+  margin-right: 15px;
+  padding: 0;
+
+  svg {
+    opacity: 0.3;
+  }
 }
 
 .like__count {
@@ -16,8 +21,17 @@
   font-weight: 700;
 }
 
+@media (min-width: $tablet-width) {
+  .like__button {
+    margin-right: 9px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .like__button {
-    background: transparent url("../../img/icons/like-icon-white.svg") no-repeat;
+    svg {
+      color: $white;
+      opacity: 1;
+    }
   }
 }

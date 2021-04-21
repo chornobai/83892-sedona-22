@@ -14,7 +14,7 @@
   position: relative;
   width: 100%;
   left: 50%;
-  transform: translate(-50%, 20px);
+  transform: translate(-50%, 22px);
 }
 
 .controls__top-scale {
@@ -25,10 +25,10 @@
 
 .controls__top-slider {
   position: absolute;
-  width: 13px;
-  height: 13px;
-  top: -5px;
-  left: 35px;
+  width: 10px;
+  height: 10px;
+  top: -4px;
+  left: 38px;
   background: $white;
   border-radius: 50%;
 }
@@ -36,9 +36,9 @@
 .controls__down {
   position: absolute;
   width: 234px;
-  bottom: -68px;
+  bottom: -65px;
   background: $light-grey;
-  padding: 23px;
+  padding: 22px 20px 20px 26px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -46,12 +46,12 @@
 @media (min-width: $tablet-width) {
   .controls {
     width: 100%;
-    padding: 45px 35px;
+    padding: 46px 35px;
     box-sizing: border-box;
   }
 
   .controls__down {
-    padding: 35px;
+    padding: 35px 42px 35px 35px;
     background: transparent;
     width: 100%;
     bottom: 0;
@@ -61,7 +61,7 @@
   .controls__top {
     position: absolute;
     width: 389px;
-    transform: translate(-58%);
+    transform: translate(-59%, -2px);
   }
 
   .controls__top-scale {
@@ -70,6 +70,18 @@
 
   .controls__top-slider {
     top: -5px;
-    left: 100px;
+    left: 111px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls__top {
+    width: 540px;
+    transform: translate(-57%, -2px);
+  }
+
+  .controls__top-slider {
+    top: -4px;
+    left: 112px;
   }
 }

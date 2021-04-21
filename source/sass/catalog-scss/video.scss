@@ -1,9 +1,10 @@
 .video {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 111px;
 }
 
 .video__item {
+  height: 201px;
   background: url("../img/background/video-mobile.jpg") no-repeat;
   background-size: cover;
 
@@ -22,22 +23,32 @@ video {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-bottom: 28px;
 }
 
 .video__text {
   line-height: 24px;
+  padding: 0 25px;
+  margin-bottom: 34px;
 }
 
 @media (min-width: $tablet-width) {
+  .video {
+    margin-bottom: 1px;
+  }
+
   .video__title {
     font-size: 30px;
+    margin-bottom: 33px;
   }
 
   .video__text {
     padding: 0 100px;
+    margin-bottom: 80px;
   }
 
   .video__item {
+    height: 500px;
     background: url("../img/background/video-tablet.jpg") no-repeat;
     background-size: cover;
 
@@ -50,11 +61,12 @@ video {
 
 @media (min-width: $desktop-width) {
   .video {
-    margin: 50px 200px;
+    margin: 50px 200px 85px 200px;
   }
 
   .video__text {
     padding: 0 170px;
+    margin-bottom: 78px;
   }
 
   .video__item {

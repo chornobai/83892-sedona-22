@@ -9,16 +9,20 @@
   background: transparent;
   padding: 0;
 
+  svg {
+    color: $button-base;
+  }
+
   &--repeat {
     margin-right: auto;
   }
 
   &--subtitles {
-    margin-right: 30px;
+    margin-right: 34px;
   }
 
-  &:hover svg path {
-    fill: $black-next;
+  &:hover svg {
+    color: $black-next;
   }
 
   &:active {
@@ -27,18 +31,22 @@
 }
 
 @media (min-width: $tablet-width) {
-  .button__item svg path {
-    fill: $white;
-  }
-
   .button__item {
-    &:hover svg path {
-      fill: $white;
+    svg {
+      color: $white;
+    }
+
+    &:hover svg {
+      color: $white;
       opacity: 0.6;
     }
 
     &:active {
       opacity: 0.3;
+    }
+
+    &--subtitles {
+      margin-right: 30px;
     }
   }
 }
