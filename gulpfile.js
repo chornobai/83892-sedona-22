@@ -91,7 +91,7 @@ const optimizeImages = () => {
 exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
- return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
  .pipe(gulp.dest("build/img"))
 }
 
@@ -112,8 +112,8 @@ exports.scripts = scripts;
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
-   .pipe(webp({quality:90}))
-   .pipe(gulp.dest("build/img"))
+    .pipe(webp({quality:90}))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.createWebp = createWebp;
