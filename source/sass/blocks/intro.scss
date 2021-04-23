@@ -17,17 +17,11 @@
     content: "";
     width: 100%;
     bottom: 0;
-    height: 57px;
+    height: 56px;
     background: url("../img/decor/intro-triangl.svg") no-repeat center;
   }
 
-  .intro__box {
-    min-height: 210px;
-  }
-
-
   &--small {
-
     min-height: 158px;
     background: $blue url("../img/background/bg-mobile.jpg") bottom;
     background-size: cover;
@@ -36,17 +30,13 @@
       background: url("../img/background/bg-mobile@2x.jpg") bottom;
       background-size: cover;
     }
-
-    .intro__box {
-      min-height: 53px;
-    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .intro {
-    height: 518px;
-    align-items: flex-start;
+    min-height: 518px;
+    margin-top: 0;
     background: $blue url("../img/background/bg-tablet.jpg");
     background-size: cover;
 
@@ -60,18 +50,17 @@
       content: "";
       width: 100%;
       bottom: 0;
-      height: 57px;
+      height: 56px;
       background: url("../img/decor/intro-triangle-2.svg") no-repeat center;
     }
 
     .intro__slogan {
-      padding-top: 77px;
       width: 461px;
       height: 350px;
     }
 
     &--small {
-      height: 290px;
+      min-height: 290px;
       background: $blue url("../img/background/bg-tablet.jpg") bottom;
 
       @media (min-resolution: 2dppx) {
@@ -80,7 +69,6 @@
       }
 
       .intro__slogan {
-        padding-top: 95px;
         width: 456px;
         height: 77px;
       }
@@ -102,13 +90,13 @@
       position: absolute;
       content: "";
       width: 100%;
-      bottom: 0;
-      height: 57px;
-      background: url("../img/decor/intro-triangle-3.svg") no-repeat;
+      bottom: -1px;
+      height: 55px;
+      background: url("../img/decor/intro-triangle-3.svg") no-repeat center;
     }
 
     &--small {
-      min-height: 302px;
+      min-height: 290px;
       background: $blue url("../img/background/bg-desktop.jpg") bottom;
 
       @media (min-resolution: 2dppx) {
@@ -117,7 +105,6 @@
       }
 
       .intro__slogan {
-        padding-top: 100px;
         width: 459px;
         height: 79px;
       }
