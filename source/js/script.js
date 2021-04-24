@@ -8,8 +8,7 @@ buttonMenu.addEventListener('click', function(evt){
     buttonMenu.classList.remove('page-header__toggle--close');
     menu.classList.add('main-nav__list--close');
   } else {
-    menu.classList.remove('main-nav__list--close');
+    menu.classList.remove('main-nav__list--close')
     buttonMenu.classList.add('page-header__toggle--close');
   }
 })
-
