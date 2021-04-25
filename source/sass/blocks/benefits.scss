@@ -8,6 +8,18 @@
       color: $white;
       padding: 48px 13px 40px 13px;
       background: $blue;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 37px;
+        background: url("../img/decor/reverse-triangl.svg") no-repeat center;
+      }
     }
 
     .benefits__picture {
@@ -111,6 +123,10 @@
 
     .benefits__item {
       padding: 40px 26px;
+
+      &::before {
+        display: none;
+      }
 
       .benefits__title {
         font-size: 21px;
