@@ -1,0 +1,70 @@
+.modal {
+  display: none;
+  width: 320px;
+  box-sizing: border-box;
+  position: fixed;
+  background: $white;
+  box-shadow: $shadow-modal;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.modal-fail {
+  top: 100px;
+  bottom: auto;
+  margin-bottom: 47px;
+  padding: 40px 41px 35px 41px;
+  z-index: 3;
+}
+
+.modal-fail__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.modal-fail__text {
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+
+.modal-fail__button {
+  font-size: 18px;
+  padding: 18px 64px 14px 63px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-fail {
+    top: 250px;
+    width: 400px;
+    padding: 23px 45px 49px 45px;
+  }
+
+  .modal-fail__title {
+    padding: 0 30px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+
+  .modal-fail__text {
+    margin-bottom: 52px;
+  }
+
+  .modal-fail__button {
+    font-size: 21px;
+    line-height: 26px;
+    padding: 18px 124px 14px 125px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-fail {
+    top: 360px;
+  }
+}

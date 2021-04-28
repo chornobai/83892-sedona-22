@@ -15,7 +15,7 @@
 
 .page-header__toggle--open {
   position: absolute;
-  top: 15px;
+  bottom: 15px;
   right: 20px;
   outline: none;
   border: none;
@@ -57,7 +57,7 @@
     flex-direction: column;
     position: relative;
 
-    .page-header__toggle {
+    .page-header__toggle--open {
       display: none;
     }
   }

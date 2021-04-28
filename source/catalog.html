@@ -8,21 +8,24 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="../favicon.ico">
   <link rel="icon" href="img/favicon/favicon-152.svg" type="image/svg+xml">
+
 </head>
 
 <body class="page-body">
   <div class="container">
     <header class="page-header">
 
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <picture>
           <source srcset="img/logo/logo-desktop.svg" media="(min-width: 1200px)">
-          <img class="page-header__image" src="img/logo/logo.svg" alt="Логотип города Седона" width="102" height="84">
+          <img class="page-header__image" loading="lazy" src="img/logo/logo.svg" alt="Логотип города Седона" width="102"
+            height="84">
         </picture>
       </a>
-      <button class="page-header__toggle page-header__toggle--close" type="button" aria-label="Открыть меню"></button>
+      <button class="page-header__toggle--open page-header__toggle--close" type="button"
+        aria-label="Открыть меню"></button>
       <nav class="main-nav">
-        <ul class="main-nav__list main-nav__list--open">
+        <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
@@ -46,6 +49,7 @@
           экономике.</p>
         <ul class="gallery__list photo">
           <li class="photo__item photo__item--wide">
+            <a class="photo__link">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/content/photo-1-desktop.webp 1x, img/content/photo-1-desktop@2x.webp 2x">
@@ -61,7 +65,7 @@
               <img class="photo__picture" src="img/content/photo-1-mobile.jpg"
                 srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Пейзаж Седоны, дорога на закате" width="280"
                 height="280">
-            </picture>
+            </picture></a>
             <div class="photo__caption">
               <div class="photo__box">
                 <h3 class="photo__title">Неродные просторы</h3>
@@ -70,14 +74,15 @@
               <div class="photo__like like">
                 <button class="like__button" type="button">
                   <svg width="23" height="21">
-                  <use xlink:href="sprite.svg#like"></use>
-                </svg>
-              </button>
+                    <use xlink:href="sprite.svg#like"></use>
+                  </svg>
+                </button>
                 <p class="like__count">1350</p>
               </div>
             </div>
           </li>
           <li class="photo__item">
+            <a class="photo__link">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
@@ -85,7 +90,7 @@
                 srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
               <img class="photo__picture" src="img/content/photo-2-mobile.jpg"
                 srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Цветущий кактус" width="280" height="280">
-            </picture>
+            </picture></a>
             <div class="photo__caption">
               <div class="photo__box">
                 <h3 class="photo__title">Местная растительность</h3>
@@ -93,13 +98,16 @@
               </div>
               <div class="photo__like like">
                 <button class="like__button" type="button">
-                  <svg width="23" height="21"><use href="sprite.svg#like"></use></svg>
-              </button>
+                  <svg width="23" height="21">
+                    <use href="sprite.svg#like"></use>
+                  </svg>
+                </button>
                 <p class="like__count">143</p>
               </div>
             </div>
           </li>
           <li class="photo__item">
+            <a class="photo__link">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
@@ -108,7 +116,7 @@
               <img class="photo__picture" src="img/content/photo-3-mobile.jpg"
                 srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Пейзаж Седоны, дорога среди леса" width="280"
                 height="280">
-            </picture>
+            </picture></a>
             <div class="photo__caption photo__caption--special">
               <div class="photo__box">
                 <h3 class="photo__title">Дорога на север</h3>
@@ -116,13 +124,14 @@
               </div>
               <div class="photo__like like">
                 <button class="like__button" type="button"><svg width="23" height="21">
-                  <use xlink:href="sprite.svg#like"></use>
-                </svg></button>
+                    <use xlink:href="sprite.svg#like"></use>
+                  </svg></button>
                 <p class="like__count">96</p>
               </div>
             </div>
           </li>
           <li class="photo__item">
+            <a class="photo__link">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
@@ -131,7 +140,7 @@
               <img class="photo__picture" src="img/content/photo-4-mobile.jpg"
                 srcset="img/content/photo-4-mobile@2x.jpg 2x" alt="Пейзаж Седоны, Мост Дьявола" width="280"
                 height="280">
-            </picture>
+            </picture></a>
             <div class="photo__caption">
               <div class="photo__box">
                 <h3 class="photo__title">Мост дьявола</h3>
@@ -139,8 +148,8 @@
               </div>
               <div class="photo__like like">
                 <button class="like__button" type="button"><svg width="23" height="21">
-                  <use xlink:href="sprite.svg#like"></use>
-                </svg></button>
+                    <use xlink:href="sprite.svg#like"></use>
+                  </svg></button>
                 <p class="like__count">254</p>
               </div>
             </div>
@@ -165,18 +174,18 @@
             <div class="controls__down button">
               <button class="button__item button__item--repeat" aria-label="Воспроизвести повторно">
                 <svg width="16" height="20">
-                <use xlink:href="sprite.svg#replay"></use>
-              </svg>
-            </button>
+                  <use xlink:href="sprite.svg#replay"></use>
+                </svg>
+              </button>
               <button class="button__item button__item--subtitles" aria-label="Субтитры">
                 <svg width="32" height="20">
-                <use xlink:href="sprite.svg#subtitle"></use>
-              </svg>
-            </button>
+                  <use xlink:href="sprite.svg#subtitle"></use>
+                </svg>
+              </button>
               <button class="button__item button__item--fullscreen" aria-label="Полноэкранный режим">
                 <svg width="20" height="20">
-                <use xlink:href="sprite.svg#fullscreen"></use>
-              </svg></button>
+                  <use xlink:href="sprite.svg#fullscreen"></use>
+                </svg></button>
             </div>
           </div>
         </section>
@@ -210,6 +219,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

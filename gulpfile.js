@@ -37,7 +37,7 @@ exports.styles = styles;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -89,6 +89,8 @@ const optimizeImages = () => {
   .pipe(gulp.dest("build/img"))
 }
 exports.optimizeImages = optimizeImages;
+
+// Copy
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")

@@ -18,14 +18,22 @@
     content: "";
     width: 100%;
     bottom: 0;
-    height: 56px;
+    height: 57px;
     background: url("../img/decor/intro-triangl.svg") no-repeat center;
+  }
+
+  .intro__box {
+    height: 210px;
   }
 
   &--small {
     min-height: 158px;
     background: $blue url("../img/background/bg-mobile.jpg") bottom;
     background-size: cover;
+
+    .intro__box {
+      height: 52px;
+    }
 
     @media (min-resolution: 2dppx) {
       background: url("../img/background/bg-mobile@2x.jpg") bottom;
@@ -55,9 +63,14 @@
       background: url("../img/decor/intro-triangle-2.svg") no-repeat center;
     }
 
+    .intro__box {
+      width: 461px;
+      height: 360px;
+    }
+
     .intro__slogan {
       width: 461px;
-      height: 350px;
+      height: 345px;
     }
 
     &--small {
@@ -67,6 +80,10 @@
       @media (min-resolution: 2dppx) {
         background: url("../img/background/bg-tablet@2x.jpg") no-repeat left left;
         background-size: cover;
+      }
+
+      .intro__box {
+        height: 99px;
       }
 
       .intro__slogan {
@@ -91,18 +108,28 @@
       position: absolute;
       content: "";
       width: 100%;
-      bottom: -1px;
-      height: 55px;
+      bottom: 0;
+      height: 57px;
       background: url("../img/decor/intro-triangle-3.svg") no-repeat center;
     }
 
+    .intro__slogan {
+      width: 460px;
+      height: 348px;
+    }
+
     &--small {
-      min-height: 290px;
+      min-height: 301px;
       background: $blue url("../img/background/bg-desktop.jpg") bottom;
 
       @media (min-resolution: 2dppx) {
         background: url("../img/background/bg-desktop@2x.jpg") no-repeat bottom;
         background-size: cover;
+      }
+
+      .intro__box {
+        width: 470px;
+        height: 100px;
       }
 
       .intro__slogan {

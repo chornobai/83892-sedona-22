@@ -14,7 +14,7 @@
         position: absolute;
         content: "";
         width: 100%;
-        top: 0;
+        top: -22px;
         left: 50%;
         transform: translateX(-50%);
         height: 37px;
@@ -45,6 +45,10 @@
   &--reverse {
     .benefits__item {
       padding: 38px 13px 36px 13px;
+
+      &::before {
+        display: none;
+      }
     }
   }
 
@@ -92,7 +96,7 @@
 
 @media (min-width: $tablet-width) {
   .benefits--special {
-    padding: 41px 0 45px 0;
+    padding: 41px 0 42px 0;
 
     .benefits__item {
       padding: 0 20px;
