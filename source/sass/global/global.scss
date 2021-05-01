@@ -27,20 +27,20 @@ img {
 
 @media (min-width: $tablet-width) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    min-width: 1200px;
+    max-width: 1200px;
     background: $white;
     box-shadow: $shadow-page;
   }
 }
 
 
-.button--blue {
+.blue {
   font-family: inherit;
   text-transform: uppercase;
   text-align: center;

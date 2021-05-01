@@ -13,7 +13,7 @@
   z-index: 3;
 }
 
-.page-header__toggle--open {
+.page-header__toggle {
   position: absolute;
   bottom: 15px;
   right: 20px;
@@ -57,7 +57,7 @@
     flex-direction: column;
     position: relative;
 
-    .page-header__toggle--open {
+    .page-header__toggle {
       display: none;
     }
   }

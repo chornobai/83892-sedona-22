@@ -1,5 +1,4 @@
 .page-body {
-  min-width: 320px;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -13,15 +12,8 @@
   background: $white;
 }
 
-@media (min-width: $tablet-width) {
-  .page-body {
-    min-width: 768px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .page-body {
-    min-width: 1280px;
     background: $grey;
   }
 }

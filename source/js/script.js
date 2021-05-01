@@ -1,5 +1,5 @@
 const menu = document.querySelector ('.main-nav__list');
-const buttonMenu = document.querySelector ('.page-header__toggle--open');
+const buttonMenu = document.querySelector ('.page-header__toggle');
 
 buttonMenu.addEventListener('click', function(evt){
   evt.preventDefault();

@@ -90,7 +90,7 @@ const optimizeImages = () => {
 }
 exports.optimizeImages = optimizeImages;
 
-// Copy
+// CopyImage
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")

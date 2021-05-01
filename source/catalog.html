@@ -15,17 +15,17 @@
   <div class="container">
     <header class="page-header">
 
-      <a class="page-header__logo" href="index.html">
+      <a class="page-header__logo">
         <picture>
           <source srcset="img/logo/logo-desktop.svg" media="(min-width: 1200px)">
           <img class="page-header__image" loading="lazy" src="img/logo/logo.svg" alt="Логотип города Седона" width="102"
             height="84">
         </picture>
       </a>
-      <button class="page-header__toggle--open page-header__toggle--close" type="button"
+      <button class="page-header__toggle" type="button"
         aria-label="Открыть меню"></button>
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--close">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
@@ -194,16 +194,16 @@
     <footer class="footer">
       <a class="footer__link" href="#">#Visitsedona</a>
       <ul class="footer__social social-list">
-        <li class="social-list__item"><a class="social-list__link social-list--twitter" href="#" aria-label="Twitter">
+        <li class="social-list__item"><a class="social-list__link social-list__link--twitter" href="#" aria-label="Twitter">
             <svg width="47" height="48">
               <use class="social-icon" xlink:href="sprite.svg#twitter" opacity="1"></use>
             </svg>
           </a></li>
-        <li class="social-list__item"><a class="social-list__link social-list--facebook" href="#" aria-label="Facebook">
+        <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#" aria-label="Facebook">
             <svg width="47" height="48">
               <use xlink:href="sprite.svg#facebook"></use>
             </svg></a></li>
-        <li class="social-list__item"><a class="social-list__link social-list--youtube" href="#" aria-label="YouTube">
+        <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#" aria-label="YouTube">
             <svg width="47" height="48">
               <use xlink:href="sprite.svg#youtube"></use>
             </svg>
