@@ -16,12 +16,17 @@
   position: absolute;
   right: 20px;
   top: 15px;
+  outline: none;
   border: none;
   width: 23px;
   height: 23px;
   background: transparent url("../img/icons/icon-cross.svg") no-repeat;
 
   &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
     opacity: 0.6;
   }
 
@@ -40,12 +45,17 @@
   position: absolute;
   bottom: 15px;
   right: 20px;
+  outline: none;
   border: none;
   width: 23px;
   height: 23px;
   background: transparent url("../img/icons/icon-menu.svg") no-repeat;
 
   &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
     opacity: 0.6;
   }
 
