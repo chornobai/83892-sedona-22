@@ -1,8 +1,9 @@
-const menu = document.querySelector ('.main-nav__list');
-const buttonMenu = document.querySelector ('.page-header__toggle');
+const menu = document.querySelector ('.main-nav');
+const buttonMenu = document.querySelector ('.main-nav__toggle');
+
+menu.classList.remove('main-nav--nojs');
 
 buttonMenu.addEventListener('click', function(evt){
   evt.preventDefault();
-  buttonMenu.classList.toggle('page-header__toggle--close');
-  menu.classList.toggle('main-nav__list--close');
+    menu.classList.toggle('main-nav--open');
 });

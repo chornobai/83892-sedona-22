@@ -22,10 +22,10 @@
             height="84">
         </picture>
       </a>
-      <button class="page-header__toggle" type="button"
-        aria-label="Открыть меню"></button>
-      <nav class="main-nav">
-        <ul class="main-nav__list main-nav__list--close">
+
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+        <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html">Главная</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
@@ -50,29 +50,30 @@
         <ul class="gallery__list photo">
           <li class="photo__item photo__item--wide">
             <a class="photo__link">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
-                srcset="img/content/photo-1-desktop.webp 1x, img/content/photo-1-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/content/photo-1-tablet.webp 1x, img/content/photo-1-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/content/photo-1-mobile.webp 1x, img/content/photo-1-mobile@2x.webp 2x">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/content/photo-1-desktop.webp 1x, img/content/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/photo-1-tablet.webp 1x, img/content/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/content/photo-1-mobile.webp 1x, img/content/photo-1-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1200px)"
-                srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
-              <img class="photo__picture" src="img/content/photo-1-mobile.jpg"
-                srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Пейзаж Седоны, дорога на закате" width="280"
-                height="280">
-            </picture></a>
+                <source media="(min-width: 1200px)"
+                  srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/photo-1-mobile.jpg"
+                  srcset="img/content/photo-1-mobile@2x.jpg 2x" alt="Пейзаж Седоны, дорога на закате" width="280"
+                  height="280">
+              </picture>
+            </a>
             <div class="photo__caption">
               <div class="photo__box">
                 <h3 class="photo__title">Неродные просторы</h3>
                 <p class="photo__author">Автор фото: Борис</p>
               </div>
               <div class="photo__like like">
-                <button class="like__button" type="button">
+                <button class="like__button" type="button" aria-label="Поставить лайк">
                   <svg width="23" height="21">
                     <use xlink:href="sprite.svg#like"></use>
                   </svg>
@@ -83,21 +84,22 @@
           </li>
           <li class="photo__item">
             <a class="photo__link">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
-              <img class="photo__picture" src="img/content/photo-2-mobile.jpg"
-                srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Цветущий кактус" width="280" height="280">
-            </picture></a>
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/photo-2-mobile.jpg"
+                  srcset="img/content/photo-2-mobile@2x.jpg 2x" alt="Цветущий кактус" width="280" height="280">
+              </picture>
+            </a>
             <div class="photo__caption">
               <div class="photo__box">
                 <h3 class="photo__title">Местная растительность</h3>
                 <p class="photo__author">Автор фото: Сергей</p>
               </div>
               <div class="photo__like like">
-                <button class="like__button" type="button">
+                <button class="like__button" type="button" aria-label="Поставить лайк">
                   <svg width="23" height="21">
                     <use href="sprite.svg#like"></use>
                   </svg>
@@ -108,22 +110,23 @@
           </li>
           <li class="photo__item">
             <a class="photo__link">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
-              <img class="photo__picture" src="img/content/photo-3-mobile.jpg"
-                srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Пейзаж Седоны, дорога среди леса" width="280"
-                height="280">
-            </picture></a>
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/photo-3-mobile.jpg"
+                  srcset="img/content/photo-3-mobile@2x.jpg 2x" alt="Пейзаж Седоны, дорога среди леса" width="280"
+                  height="280">
+              </picture>
+            </a>
             <div class="photo__caption photo__caption--special">
               <div class="photo__box">
                 <h3 class="photo__title">Дорога на север</h3>
                 <p class="photo__author">Автор фото: Петр</p>
               </div>
               <div class="photo__like like">
-                <button class="like__button" type="button"><svg width="23" height="21">
+                <button class="like__button" type="button" aria-label="Поставить лайк"><svg width="23" height="21">
                     <use xlink:href="sprite.svg#like"></use>
                   </svg></button>
                 <p class="like__count">96</p>
@@ -132,22 +135,23 @@
           </li>
           <li class="photo__item">
             <a class="photo__link">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x">
-              <img class="photo__picture" src="img/content/photo-4-mobile.jpg"
-                srcset="img/content/photo-4-mobile@2x.jpg 2x" alt="Пейзаж Седоны, Мост Дьявола" width="280"
-                height="280">
-            </picture></a>
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x">
+                <img class="photo__picture" src="img/content/photo-4-mobile.jpg"
+                  srcset="img/content/photo-4-mobile@2x.jpg 2x" alt="Пейзаж Седоны, Мост Дьявола" width="280"
+                  height="280">
+              </picture>
+            </a>
             <div class="photo__caption">
               <div class="photo__box">
                 <h3 class="photo__title">Мост дьявола</h3>
                 <p class="photo__author">Автор фото: Антон</p>
               </div>
               <div class="photo__like like">
-                <button class="like__button" type="button"><svg width="23" height="21">
+                <button class="like__button" type="button" aria-label="Поставить лайк"><svg width="23" height="21">
                     <use xlink:href="sprite.svg#like"></use>
                   </svg></button>
                 <p class="like__count">254</p>
@@ -194,16 +198,19 @@
     <footer class="footer">
       <a class="footer__link" href="#">#Visitsedona</a>
       <ul class="footer__social social-list">
-        <li class="social-list__item"><a class="social-list__link social-list__link--twitter" href="#" aria-label="Twitter">
+        <li class="social-list__item"><a class="social-list__link social-list__link--twitter" href="#"
+            aria-label="Twitter">
             <svg width="47" height="48">
               <use class="social-icon" xlink:href="sprite.svg#twitter" opacity="1"></use>
             </svg>
           </a></li>
-        <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#" aria-label="Facebook">
+        <li class="social-list__item"><a class="social-list__link social-list__link--facebook" href="#"
+            aria-label="Facebook">
             <svg width="47" height="48">
               <use xlink:href="sprite.svg#facebook"></use>
             </svg></a></li>
-        <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#" aria-label="YouTube">
+        <li class="social-list__item"><a class="social-list__link social-list__link--youtube" href="#"
+            aria-label="YouTube">
             <svg width="47" height="48">
               <use xlink:href="sprite.svg#youtube"></use>
             </svg>

@@ -1,10 +1,59 @@
-.main-nav__list {
-  @include reset;
+// main-nav--nojs - реализация меню без js
+
+.main-nav--nojs .main-nav__list {
+  display: block;
 }
 
-.main-nav__list--close {
+.main-nav--nojs .main-nav__toggle {
   display: none;
 }
+
+.main-nav--open .main-nav__list {
+  display: block;
+}
+
+.main-nav--open .main-nav__toggle {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  border: none;
+  width: 23px;
+  height: 23px;
+  background: transparent url("../img/icons/icon-cross.svg") no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__list {
+  @include reset;
+  display: none;
+}
+// Класс - реализация без js
+
+.main-nav__toggle {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  border: none;
+  width: 23px;
+  height: 23px;
+  background: transparent url("../img/icons/icon-menu.svg") no-repeat;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 
 .main-nav__item {
   background: $blue;
@@ -39,7 +88,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__list {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav .main-nav__list {
     display: flex;
     justify-content: space-between;
   }

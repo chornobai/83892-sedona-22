@@ -13,53 +13,12 @@
   z-index: 3;
 }
 
-.page-header__toggle {
-  position: absolute;
-  bottom: 15px;
-  right: 20px;
-  outline: none;
-  border: none;
-  width: 23px;
-  height: 23px;
-  background: transparent url("../img/icons/icon-menu.svg") no-repeat;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.page-header__toggle--close {
-  position: absolute;
-  right: 20px;
-  top: 15px;
-  outline: none;
-  border: none;
-  width: 23px;
-  height: 23px;
-  background: transparent url("../img/icons/icon-cross.svg") no-repeat;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .page-header {
     padding: 15px 27px 15px 48px;
     flex-direction: column;
     position: relative;
-
-    .page-header__toggle {
-      display: none;
-    }
   }
 
   .page-header__logo {
