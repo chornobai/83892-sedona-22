@@ -57,6 +57,10 @@ img {
     background: $blue-hover;
   }
 
+  &:focus {
+    background: $blue-hover;
+  }
+
   &:active {
     color: $white-opacity;
     background: $blue-active;
